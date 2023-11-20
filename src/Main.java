@@ -8,13 +8,14 @@ public class Main {
         List<String> outputStrings = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         StringSorter stringSorter = new StringSorter();
+        SortingRule sortingRule = (String str) -> str.contains("a");
         String input = "";
 
         while (!"0".equals(input)) {
             input = scan.nextLine();
             inputStrings.add(input);
         }
-        outputStrings = stringSorter.sortStrings(inputStrings, outputStrings);
+        outputStrings = stringSorter.sortStrings(inputStrings, outputStrings, sortingRule);
         System.out.println(outputStrings);
     }
 }
