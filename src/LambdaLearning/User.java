@@ -1,3 +1,5 @@
+package LambdaLearning;
+
 public class User {
     private final String name;
     private final int age;
@@ -13,7 +15,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "LambdaLearning.User{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
